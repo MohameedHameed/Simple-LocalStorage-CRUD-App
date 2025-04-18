@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+  
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+ <div class="crud">
+  <div class="Title">
+    <h2>CRUDS</h2>
+  <p>project Managment System</p>
+  </div>
+  <input id="title" type="text" name="Title" placeholder="title">
+  <div class="inputs">
+    <input  onkeyup="gettotal()" type="number" id="price" placeholder="price" value="0">
+    <input onkeyup="gettotal()" type="number" id="taxes" placeholder="taxes" value="0">
+    <input  onkeyup="gettotal()" type="number" id="ads" placeholder="ads" value="0">
+    <input  onkeyup="gettotal()" type="number" id="discount" placeholder="discount" value="0">
+    <small id="total" >0</small>
+  </div>
+  <input type="number" id="count" placeholder="count">
+  <input type="text" id="category" placeholder="category">
+  <button id="btn_Create">Create</button>
+  <input type="text" id="Search" placeholder="Search" onkeyup="SerachItems()">
+  <div id="searchdiv" class="searchbtn">
+    <button id="btn_serach_By_Title" onclick="Serach(this.id)">Serach By Title</button>
+    <button id="btn_Serach_By_category" onclick="Serach(this.id)">Serach By category</button>
+
+  </div>
+  <button id="deleteall" onclick="DeleteAll()">Delete all</button>
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Price</th>
+      <th>taxes</th>
+      <th>ads</th>
+      <th>discount</th>
+      <th>total</th>
+      <th>category</th>
+      <th>updaate</th>
+      <th>delete</th>
+    </tr>
+    <tbody id="tbody">
+    <tr>
+
+
+    </tr>
+  </tbody>
+  </table>
+
+
+  
+ </div>
+
+    <script src="1.js"></script>
+</body>
+</html>
